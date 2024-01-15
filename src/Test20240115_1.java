@@ -6,7 +6,7 @@ class Box {
 	Box(String cont) {
 		this.conts = cont;
 	}
-	public String toString() {	//¿À¹ö·Îµù Àû¿ë
+	public String toString() {	//ì˜¤ë²„ë¡œë”© ì ìš©
 		return conts;
 	}
 }
@@ -34,9 +34,9 @@ public class Test20240115_1 {
 //		System.out.println(sum);
 //
 //		Scanner sc1 = new Scanner(System.in);
-//		String str1 = sc1.next();		//½ºÆäÀÌ½º ±¸ºĞÀÚ
+//		String str1 = sc1.next();		//ìŠ¤í˜ì´ìŠ¤ êµ¬ë¶„ì
 //		String str2 = sc1.next();
-//		//String str1 = sc1.nextLine();	//¶óÀÎ´ÜÀ§
+//		//String str1 = sc1.nextLine();	//ë¼ì¸ë‹¨ìœ„
 //		
 //		System.out.println(str1);
 //		System.out.println(str2);
@@ -52,14 +52,14 @@ public class Test20240115_1 {
 		System.out.println("ar2 = " + ar2.length);
 		System.out.println("ar3 = " + ar3.length);
 		
-		//°ªÀ» ¾´´Ù=°ªÀ» ³Ö´Â´Ù=ÀúÀåÇÑ´Ù
+		//ê°’ì„ ì“´ë‹¤=ê°’ì„ ë„£ëŠ”ë‹¤=ì €ì¥í•œë‹¤
 		ar1[0] = 1;
 		ar1[1] = 2;
 		ar1[2] = 3;
 		ar1[3] = 4;
 		ar1[4] = 5;
 		
-		//°ªÀ» ÀĞ´Â´Ù
+		//ê°’ì„ ì½ëŠ”ë‹¤
 		for(int i = 0; i < ar1.length; i++) {
 			System.out.println(ar1[i]);
 		}
@@ -73,8 +73,6 @@ public class Test20240115_1 {
 			sum = sum + arr[i];
 		}
 		System.out.println(sum);	//fasasfas
-
-		System.out.println("¾È³çÇÏ¼¼¿ä");
 	}
 
 }
