@@ -7,7 +7,7 @@ public class Test20240112_2 {
 //
 //		Scanner sc = new Scanner(System.in);
 //		
-//		System.out.print("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä.(¿ª¼øÀ¸·Î ³ªÅ¸³»±â) >> \n");
+//		System.out.print("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”.(ì—­ìˆœìœ¼ë¡œ ë‚˜íƒ€ë‚´ê¸°) >> \n");
 //		String str = sc.next();
 //
 //		for (int i = str.length() - 1; i >= 0; i--) {
@@ -30,23 +30,23 @@ public class Test20240112_2 {
 		   int cmp;
 		   
 		   if(st1.equals(st2))	//equals
-		      System.out.println("µÎ ¹®ÀÚ¿­Àº °°½À´Ï´Ù.");
+		      System.out.println("ë‘ ë¬¸ìì—´ì€ ê°™ìŠµë‹ˆë‹¤.");
 		   else
-		      System.out.println("µÎ ¹®ÀÚ¿­Àº ´Ù¸¨´Ï´Ù.");
+		      System.out.println("ë‘ ë¬¸ìì—´ì€ ë‹¤ë¦…ë‹ˆë‹¤.");
 	
 		   cmp = st1.compareTo(st2);	//compareTo
 		   System.out.println("st1.compareTo(st2) = " + cmp);
 		   if(cmp == 0)
-		      System.out.println("µÎ ¹®ÀÚ¿­Àº ÀÏÄ¡ÇÕ´Ï´Ù.");
+		      System.out.println("ë‘ ë¬¸ìì—´ì€ ì¼ì¹˜í•©ë‹ˆë‹¤.");
 		   else if (cmp < 0)
-		      System.out.println("»çÀüÀÇ ¾Õ¿¡ À§Ä¡ÇÏ´Â ¹®ÀÚ: " + st1);
+		      System.out.println("ì‚¬ì „ì˜ ì•ì— ìœ„ì¹˜í•˜ëŠ” ë¬¸ì: " + st1);
 		   else
-		      System.out.println("»çÀüÀÇ ¾Õ¿¡ À§Ä¡ÇÏ´Â ¹®ÀÚ: " + st2);
+		      System.out.println("ì‚¬ì „ì˜ ì•ì— ìœ„ì¹˜í•˜ëŠ” ë¬¸ì: " + st2);
 		   
 		   if(st1.compareToIgnoreCase(st2) == 0)	//compareToIgnoreCase
-		      System.out.println("µÎ ¹®ÀÚ¿­Àº °°½À´Ï´Ù.");
+		      System.out.println("ë‘ ë¬¸ìì—´ì€ ê°™ìŠµë‹ˆë‹¤.");
 		   else
-		      System.out.println("µÎ ¹®ÀÚ¿­Àº ´Ù¸¨´Ï´Ù.");
+		      System.out.println("ë‘ ë¬¸ìì—´ì€ ë‹¤ë¦…ë‹ˆë‹¤.");
 	
 		   double e = 2.718281;
 		   String se = String.valueOf(e);
@@ -65,35 +65,35 @@ public class Test20240112_2 {
 		   str1 = str1.concat("camp");	// str1 = str1 + "camp"
 		   System.out.println(str1);
 		   
-		   String birth = "<¾ç>" + 7 + '.' + 16;
+		   String birth = "<ì–‘>" + 7 + '.' + 16;
 		   System.out.println(birth);
-		   birth = (new StringBuilder("<¾ç>").append(7).append('.').append(16)).toString();	//StringBuilder
+		   birth = (new StringBuilder("<ì–‘>").append(7).append('.').append(16)).toString();	//StringBuilder
 		   System.out.println(birth);
 ///////////////////////////////////////////////////////////////////////////
-		   // ¹®ÀÚ¿­ "123"ÀÌ ÀúÀåµÈ ÀÎ½ºÅÏ½ºÀÇ »ı¼º
+		   // ë¬¸ìì—´ "123"ì´ ì €ì¥ëœ ì¸ìŠ¤í„´ìŠ¤ì˜ ìƒì„±
 		   StringBuilder stbuf = new StringBuilder("123");
 		   
-		   stbuf.append(45678);   // ¹®ÀÚ¿­ µ¡ºÙÀÌ±â
+		   stbuf.append(45678);   // ë¬¸ìì—´ ë§ë¶™ì´ê¸°
 		   System.out.println(stbuf.toString());	//12345678
 		   System.out.println(stbuf);				//12345678
 		   
-		   stbuf.delete(0, 2);    // ¹®ÀÚ¿­ ÀÏºÎ »èÁ¦
+		   stbuf.delete(0, 2);    // ë¬¸ìì—´ ì¼ë¶€ ì‚­ì œ
 		   System.out.println(stbuf.toString());	//345678
 		   
-		   stbuf.replace(0, 3, "AB");    // ¹®ÀÚ¿­ ÀÏºÎ ±³Ã¼
+		   stbuf.replace(0, 3, "AB");    // ë¬¸ìì—´ ì¼ë¶€ êµì²´
 		   System.out.println(stbuf.toString());	//AB678
 
-		   stbuf.reverse();    // ¹®ÀÚ¿­ ³»¿ë µÚÁı±â
+		   stbuf.reverse();    // ë¬¸ìì—´ ë‚´ìš© ë’¤ì§‘ê¸°
 		   System.out.println(stbuf.toString());	//876BA
 
-		   String sub = stbuf.substring(2, 4);  // ÀÏºÎ¸¸ ¹®ÀÚ¿­·Î ¹İÈ¯
+		   String sub = stbuf.substring(2, 4);  // ì¼ë¶€ë§Œ ë¬¸ìì—´ë¡œ ë°˜í™˜
 		   System.out.println(sub);				//6B
 ////////////		   
 		   StringBuilder sbStr = new StringBuilder("age");
-		   sbStr.append(17);   // ¹®ÀÚ¿­ µ¡ºÙÀÌ±â
+		   sbStr.append(17);   // ë¬¸ìì—´ ë§ë¶™ì´ê¸°
 		   System.out.println(sbStr.toString());	//age17
 ////////////////////////////////////////////////////////////////////////////
-		   
+//		   server edit
 		   
 	}
 
